@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Détail Projet</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/detailprojet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="top-navbar">
+      <div class="user-info">
+          <span class="first-section">
+            <span class="user-name">Imen Kouadri</span>
+            <span class="location">Guelma</span>
+          </span>
+          <img src="media/user-profile.jpg" alt="User Profile" class="user-image">
+          <div class="divider"></div>
+          <a href="#"><i class="bx bx-help-circle"></i></a>
+      </div>
+    </div>
+
+    <nav class="sidebar">
+      <div class="top">   
+        <img src="media/logo.svg" alt="logo" />
+        <h2>AT Projet</h2>
+      </div>
+
+      <ul>
+        <li >
+          <a  href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="nav-item">Dashbord</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="prj-btn">
+            <i class="bx bxl-codepen"></i>
+            <span class="nav-item">Projets</span>
+            <span class="fas fa-caret-down first"></span>
+          </a>
+          <ul class="prj-show">
+            <li><a href="listproj.html">Liste des projets</a></li>
+            <li><a href="nvproj.html" >Nouveau projet</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="cmpn-btn">
+            <i class="bx bx-building-house"></i>
+            <span class="nav-item">Entreprises</span>
+            <span class="fas fa-caret-down second"></span>
+          </a>
+          <ul class="cmpn-show">
+            <li><a href="listEntreprises.html">Liste des entreprises</a></li>
+            <li><a href="nvEntreprise.html" >Nouvelle entreprise</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="user-btn">
+            <i class="bx bx-user"></i>
+            <span class="nav-item">Utilisateurs</span>
+            <span class="fas fa-caret-down third"></span>
+          </a>
+          <ul class="user-show">
+            <li><a href="listutilisateurs.html">Liste des utilisateurs</a></li>
+            <li><a href="nvutilisateur.html">Nouveau utilisateur</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="bpu-btn">
+            <i class="bx bx-money-withdraw"></i>
+            <span class="nav-item">BPU</span>
+            <span class="fas fa-caret-down fourth"></span>
+          </a>
+          <ul class="bpu-show">
+            <li><a href="listBPUs.html">Liste des BPUs</a></li>
+            <li><a href="nvBPU.html">Nouveau BPU</a></li>
+          </ul>
+        </li>
+        <li><a href="#">
+          <i class="bx bx-cog"></i>
+          <span class="nav-item">Paramètres</span>
+        </a></li>
+        <li><a href="#">
+          <i class="bx bx-log-out"></i>
+          <span class="nav-item">Se déconnecter</span>
+        </a></li>
+      </ul>
+    </nav>
+
+<main>
+    <div class="arrow-back">
+        <a href="#"><i class="bx bx-arrow-back"></i></a>
+       </div>
+    <div class="card"> 
+        <div class="row">
+            <div class="elment">
+                <label for="description">Projet:</label>
+                <div class="info" id="description">Rétablissement des dégâts et remplacement des câbles CDN</div>
+            </div>
+            <div class="elment">
+                <label for="date">Date de création:</label>
+                <div class="info" id="date">2024-09-12</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elment">
+                <label for="localisation">Localisation:</label>
+                <div class="info" id="localisation">Guelma, Guelma, Nouvelle ville</div>
+            </div>
+            <div class="elment">
+                <label for="code">Code:</label>
+                <div class="info" id="code">01-2020-CMP02</div>
+            </div>
+        </div>
+    </div>
+    <h2>Actions:</h2>
+    <div class="box">
+        <div class="search-container">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Recherche">
+        </div>
+        <button>
+            <a href="#">+Nouvelle Action</a>
+        </button>
+    </div>
+
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Description</th>
+                    <th>CMP</th>
+                    <th>Commutateur</th>
+                    <th>Consist</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>création Canalisation Urbain Cité 160 Logts Social - Nouvelle Ville CMP 01 GUELMA</td>
+                    <td>CMP 01</td>
+                    <td>OLT Nouvelle Ville</td>
+                    <td>200</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-cog"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ODN et UPLINK Cité 160 logts Social - Guelma</td>
+                    <td>Guelma 01</td>
+                    <td>MK1N</td>
+                    <td>200</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-cog"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Devis quantitatif et estimatif pour Construction des dalles DO GUELMA</td>
+                    <td>CMP 01</td>
+                    <td>GUL</td>
+                    <td>200</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-cog"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dépose Poteaux Nador - Bouaati Mahmoud CMP2 Guelma</td>
+                    <td>CMP 02</td>
+                    <td>CMP 02</td>
+                    <td>500</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-cog"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Raccordement D abonnés DO Guelma (01-2022)</td>
+                    <td>Guelma 01</td>
+                    <td>Guelma 01</td>
+                    <td>500</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-cog"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Raccordement 112 lignes abonnés cmp bouchegeouf 4-2021</td>
+                    <td>bouchegeouf</td>
+                    <td>bouchegeouf</td>
+                    <td>250</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-cog"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                
+                <!-- <tr>
+                    <td>7</td>
+                    <td>Rétablissement des dégâts et changement de câble et réparation des casse zone CMP2 07-2021</td>
+                    <td>CMP 02</td>
+                    <td>GUL</td>
+                    <td>500</td>
+                    <td>
+                        <button class="action-button">
+                         <i class="bx bx-arrow-back"></i>
+                        </button>
+                        <button class="action-button">
+                         <i class="bx bx-highlight"></i>
+                        </button>
+                        <button class="action-button">
+                            <i class="bx bx-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button class="page-button">❮</button>
+            <button class="page-button active">1</button>
+            <button class="page-button">2</button>
+            <button class="page-button">3</button>
+            <button class="page-button">4</button>
+            <button class="page-button">❯</button>
+        </div>
+    </div>
+    
+
+
+</main>
+
+
+
+
+
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>

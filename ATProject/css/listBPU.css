@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*************************************Main section*****************************************/
+main{
+    position:fixed;
+    top:50px;
+    left:250px;
+    background-color: #F3F8FD;
+    width: calc(100% - 250px); 
+    height: calc(100% - 50px); 
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+
+}
+
+main h1{
+    color: #334053;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-left: 27px;
+    margin-top: 30px;
+}
+
+.search-container{
+    width:300px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+    border: 1px solid #CED4DA;
+}
+.search-container> i {
+font-size: 20px;
+color: #ADB5BD;
+}
+.search-container> input{
+	flex: 1;
+	height: 20px;
+	border: none;
+	outline: none;
+	font-size: 15px;
+    font-family: Open Sans, sans-serif;
+	padding-left: 10px;
+
+}
+.search-container> input::placeholder {
+    color: #ADB5BD;
+  }
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 27px;
+    margin-right: 40px;
+    padding-right: 60px;
+}
+
+
+label {
+    /* display: block; */
+    margin-bottom: 5px;
+    color:#334053;
+    font-family: Open Sans, sans-serif;
+    font-weight:600;
+}
+select{
+    width:300px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #CED4DA;
+    margin-left: 10px;
+    font-size: 15px;
+}
+select option{
+    color: #000;
+    font-family: Open Sans, sans-serif;
+}
+
+.search-container:focus, select option:focus{
+    border: 1px solid #ADB5BD;
+}
+
+
+/**************** */
+.table-container {
+    width: 95%;
+    margin: 10px auto;
+    overflow-x: auto;
+    border-radius: 5px 5px 0 0;
+    background-color: white;
+    padding: 10px 0;
+   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    padding-left: 15px;
+    border-bottom: 1px solid #E9ECEF;
+    border-right: 1px solid #E9ECEF;
+    font-family: open sans, sans-serif;
+    color: #333333; 
+    font-size: 0.9em;
+}
+
+th {
+    background-color: white;
+    font-family: open sans, sans-serif;
+    color: #5F6C82;
+}
+
+
+.table-container tbody tr:nth-of-type(even) {
+    background-color: #F8F9FA;
+}
+
+
+.action-button {
+    background: none;
+    border: 1px solid #CED4DA;
+    cursor: pointer;
+    padding: 7px 7px;
+    border-radius: 8px;
+    width:30px;
+    height: 30px;
+}
+.bx-arrow-back{
+    transform: rotate(135deg);
+}
+
+table tr td:first-child {
+    text-align: center;
+    padding-left: 0px;
+}
+
+
+.pagination {
+    width: 25%;
+    display: flex;
+    justify-content:space-between;
+    align-items: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.page-button {
+    border: 1px solid #CED4DA;
+    padding: 7px 7px;
+    border-radius: 8px;
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    font-family: open sans, sans-serif;
+    font-size: 0.75rem;
+
+}
+
+.page-button.active {
+    font-weight: bold;
+    border: 1px solid #2C73EB;
+    color: #2C73EB;
+}

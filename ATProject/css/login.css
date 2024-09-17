@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root{
+    --blue: #233E83;
+    --blue-clair: #2C73EB;
+    --subtitle:#5F6C82;
+    --text-color:#334053;
+    --white:#FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu , sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 0;
+    overflow: hidden;
+   
+}
+/* *********************Logo section ************************************ */
+.logo-section {
+    background-color: #0a2e7a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: left;
+    width: 50%;
+    padding: 5em 5em;
+    min-height: 100vh;
+    border-radius: 3.5% 0% 0% 3.5% ;
+}
+.logo-section img {
+    width: 210px;
+    margin-bottom: 0;
+}
+
+.logo-section h2 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-family: Jockey One, sans-serif;
+}
+
+.logo-section p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+
+/* *********************Login section ************************************ */
+.login-section {
+    border-left: 5em solid transparent;
+    border-right: 5em solid transparent;
+    border-top: 5em solid transparent;
+    border-bottom: 5em solid transparent;
+    width: 50%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+h1 {
+    font-size: 2rem;
+    color: #0a2e7a;
+    margin-bottom: 1rem;
+}
+
+.login-section p {
+    font-size: 1rem;
+    color: #5F6C82;
+    margin-bottom: 2rem;
+
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5F6C82;
+    margin-bottom: 0.5rem;
+}
+
+input[type="email"]{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #F3F8FD;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    background-color: #F3F8FD;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #F3F8FD;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: #F3F8FD;
+}
+
+form input:hover{
+    border-color: #2C73EB;
+  }
+
+  form input:focus{
+    outline: none;
+    border-color: #2C73EB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+
+.password-container {
+    position: relative;
+}
+
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 0.875rem;
+    color: #2C73EB;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0a2e7a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #092466;
+}
+
+.divider {
+    border-top: 2px solid #F5F5F5;
+    margin: 0 ;
+    margin-bottom: 2rem;;
+  }
+
